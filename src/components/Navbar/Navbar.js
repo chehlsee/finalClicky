@@ -7,7 +7,6 @@ const Navbar = props => (
   <nav className="navbar navbar-toggler navbar-light">
   
   <ul>
-    <li className="Left"> Chehlsee's Clicky Game</li>
     <li className="Right">Score: {props.score}</li>
     <li className="Right">highScore: {props.highScore}</li>
   </ul>

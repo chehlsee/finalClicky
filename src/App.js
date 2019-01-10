@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 //  this is not connected
 import "./App.css";
+import Jumbotron from "./components/Jumbotron/Jumbotron";
 
 // class App extends Component {
 // render(){
@@ -23,6 +24,7 @@ import "./App.css";
 // );
 // }
 
+// code is similar to in class friends assignment
 class App extends Component {
   // setting this.state.friends to friends json array
   state = {
@@ -71,12 +73,7 @@ class App extends Component {
           (function (a, b) {
             // math.random() can create number 0~1 excluded which means the result of 0.5 - Math.random() could be either a positive or negative value
             return 0.5 - Math.random();
-          }),
-        friends,
-        imageClicked: [],
-        score: 0,
-        highScore: topScore,
-        printResult: "Sorry you guessed wrong!"
+          })
       });
 
       // console.log("score" + score);
@@ -138,56 +135,34 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Title>Only Click the Image Once to Win!</Title>
-        {/* <Navbar> */}
+        <Jumbotron>
+        </Jumbotron>
+        {/* <Title>Only Click the Image Once to Win!</Title> */}
+
+        {/* score is not printing to the navbar */}
+        <Navbar>
+        {this.state.score}
+               {this.state.highScore}
+               {this.state.printResult}
+
+        </Navbar>
           {this.state.friends.map(friend => (
-            <FriendCard removeFriend={this.removeFriend}
+            <FriendCard 
              id={friend.id}
                key={friend.id}
                name={friend.name}
                image={friend.image}
                FriendCard userClick = {this.userClick}
-               navbarScore= {this.state.score}
-               highScore= {this.state.highScore}
-               printResult={this.state.printResult}
-              // id={this.state.result.id}
-              // key={this.state.result.key}
-              // name={this.state.result.name}
-              // image={this.state.result.image}
-              // FriendCard userClick={this.state.result.userClick}
-              // navbarScore={this.state.result.score}
-              // highScore={this.state.result.highScore}
-              // result={this.state.result.result}
             />
           ))}
-        {/* </Navbar> */}
+        <Footer>
+        </Footer>
       </Wrapper>
     )
   }
-  // on nav bar need to render the score
 
-  // on nav bar need to render the high score
-
-  // on nav bar need to render the current score
-
-  // render all of the score info into the jumbotron
-
-  // set up a container that holds this.state.friends.map (friend => )
-
-  // FriendCard userClick= {
-  // this.userClick } 
-  // id = {friend.id}
-  // all react needs to have key
-  // key = {friend.id}
-  // name = {friend.name}
-  // image = {friend.image}
-
-
-  // close container
 }
-// {/* <Footer> */}
 
-// </Footer>
 
 export default App;
 

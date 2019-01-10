@@ -7,29 +7,15 @@ const FriendCard = props => (
   <div className="container">
   <div className="card" onClick={props.userClick}>
   <div className="image-container">
-  <img alt={props.name}src={props.image} />
-
-  {/* similar to stu-friendrefactor in class */}
-  <div className="content">
-  <ul>
-    <li>
-      <strong>Name:</strong> {props.name}
-    </li>
-    <li>
-      <strong>High Score:</strong> {props.highScore};
-    </li>
-    <li>
-      <strong>Score:</strong> {props.newScore};
-    </li>
-  </ul>
-  </div>
-  {/* remove */}
- <span onClick={() => props.removeFriend(props.id)} className="remove"> 
-  </span>
+  <img className="img-thumbnail img-responsive"
+  alt={props.name}
+  src={props.image} 
+  onclick={() => props.clickPicture(props.id)}
+  />
   </div>
   </div>
   </div>
+  
 );
 
 export default FriendCard;
-

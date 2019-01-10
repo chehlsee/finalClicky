@@ -1,24 +1,24 @@
 .card {
   background: pink;
   border-radius: 2px;
-  height: 325px;
+  height: 200px;
   margin: 1rem;
-  position: relative;
-  width: 325px;
+  width: 200px;
   box-shadow: 0 3px 6px #999, 0 3px 6px #999;
-  text-align: left;
+  text-align: center;
+  position: relative;
+
 }
 
 .card > .image-container {
-  height: 60%;
-  width: 60%;
   overflow:hidden;
   text-align: center;
-  background: lightblue;
+  display: center;
+  width: 100%;
 }
 
 .card > .image-container {
-  width: 60%;
+  width: 100%;
 }
 
 .card > .content {
@@ -35,15 +35,7 @@
   margin-top: 18px;
 }
 
-.card > .remove {
-  color: red;
-  font-size: 40px;
-  position: absolute;
-  top: -20px;
-  right: 5px;
-  cursor: pointer;
-}
-
-.card > .remove:hover {
-  color: red;
+.img-thumbnail:hover {
+  background-color: rgb(255, 255,255);
+  opacity: 0.5;
 }

@@ -1,17 +1,28 @@
 .header{
-  background-color: lightpink;
+  background-image: url("/src/components/Jumbotron/hellokittyBanner.jpg");
   position: relative;
   width: 100%;
 }
 
+/* h1 is props */
 h1{
   text-align: center;
-  font-size: 50px;
+  font-family: 'Brizel';
+  font-size: 25px;
   font-weight: bold;
   color: lightcoral;
 }
 
+/* h2 is the clicky game title */
 h2{
+  text-align:center;
+  font-size: 50px;
+  padding-bottom: 20px;
+  color: lightcoral;
+}
+
+/* h3 is rules */
+h3{
   text-align:center;
   font-size: 25px;
   padding-bottom: 20px;
