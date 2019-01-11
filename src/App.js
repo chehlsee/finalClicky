@@ -137,13 +137,13 @@ class App extends Component {
       <Wrapper>
         <Jumbotron>
         </Jumbotron>
-        {/* <Title>Only Click the Image Once to Win!</Title> */}
 
         {/* score is not printing to the navbar */}
-        <Navbar>
+        <Navbar 
+        score={this.state.score}
+        highScore={this.state.score}>
         {this.state.score}
                {this.state.highScore}
-               {this.state.printResult}
 
         </Navbar>
           {this.state.friends.map(friend => (
