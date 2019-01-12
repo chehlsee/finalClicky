@@ -1,10 +1,11 @@
 
-.Right{
-  display: inline-block;
+.Left{
+  display: inline;
   padding-left: 20px;
   margin-left: 20px;
   line-height: 20px;
   border-left: 5px solid lightblue;
+  text-align: center;
 }
 
 .navbar {

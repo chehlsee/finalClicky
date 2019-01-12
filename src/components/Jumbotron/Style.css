@@ -1,7 +1,11 @@
 .header{
-  /* background-image: url("/src/components/Jumbotron/hellokittyBanner.jpg"); */
+   background-image: url("/https://www.sanrio.co.jp/common_v2/img/img_footer.gif");
   position: relative;
   width: 100%;
+}
+
+.jumbotronImage{
+  background-image: url ("https://www.sanrio.co.jp/common_v2/img/img_footer.gif");
 }
 
 /* h1 is props */

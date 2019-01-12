@@ -6,15 +6,17 @@ import hellokittyBanner from './hellokittyBanner.jpg';
 console.log(hellokittyBanner);
 
 
-const Jumbotron = (props) => (
-  <header 
-  className="header">
+function Jumbotron (props) {
+  
+  return (
+  <div className="jumbotronImage header">
   <h1>
     {props.printResult}</h1>
     <h2>Chehlsee's Clicky Game!</h2>
     <h3>Rules: Click on each image only once!</h3>
-    </header>
+    </div>
 );
+}
 
 // need to export or else it will not render
 export default Jumbotron;

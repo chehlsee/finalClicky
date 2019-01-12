@@ -7,8 +7,8 @@ const Navbar = props => (
   <nav className="navbar navbar-toggler navbar-light">
   
   <ul>
-    <li className="Right">Score: {props.score}</li>
-    <li className="Right">highScore: {props.highScore}</li>
+    <li className="Left">Score: {props.score}</li>
+    <li className="Left">highScore: {props.highScore}</li>
   </ul>
   </nav>
 );
